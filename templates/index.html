@@ -1,0 +1,261 @@
+<html>
+  <head>
+    <title>College HelpDesk</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+      <link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet"
+        integrity="sha384-wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" crossorigin="anonymous">
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <style>
+        body {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 14px;
+        background: #21bdec;
+        background-attachment: fixed;
+        background-size: cover;
+        }
+        * {
+        -webkit-box-sizing: border-box;
+        -moz-box-sizing: border-box;
+        box-sizing: border-box;
+        }
+        .container {
+        border: 0px solid black;
+        left: 10%;
+        position: relative;
+        }
+        .text-center {
+        position: relative;
+        border: 0px solid red;
+        }
+        .hd1 {
+        top: 0px;
+        width: 30%;
+        position: relative;
+        }
+        img {
+        right: 0;
+        -webkit-user-drag: none;
+        -moz-user-drag: none;
+        -khtml-user-drag: none;
+        }
+        a:link {
+        color: red;
+        }
+        /* visited link */
+        a:visited {
+        color:yellow;
+        }
+        /* mouse over link */
+        a:hover {
+        color: hotpink;
+        }
+        /* selected link */
+        a:active {
+        color: blue;
+        }
+        .width100 {
+        width: 100%;
+        }
+        .text-center {
+        text-align: center;
+        }
+        .container {
+        padding-right: 15px;
+        padding-left: 15px;
+        margin-right: auto;
+        margin-left: auto;
+        }
+        .hd1 {
+        position: absolute;
+        font-size: 50px;
+        font-weight: 100;
+        }
+        .footer {
+        border: 0px solid black;
+        margin-top: 40%;
+        position: relative;
+        bottom: 40px;
+        width: auto;
+        left: 0;
+        right: 0;
+        margin: 0 auto;
+        }
+        .foo-txt {
+        font-size: 25px;
+        font-weight: 400;
+        font-family: 'Satisfy', cursive;
+        text-shadow: none;
+        color: #272727;
+        }
+        .fa-heart {
+        color: #fb2323;
+        }
+        /* Demo end */
+        /*----chat div---*/
+        h3 {
+        color: black;
+        font-size: 20px;
+        margin-top: 3px;
+        text-align: center;
+        }
+        #chatbox {
+        margin-left: auto;
+        margin-right: auto;
+        width: 90%;
+        margin-top: 40%;
+        border: 0px solid black;
+        }
+        #chatbox img {
+        border-radius: 50%;
+        }
+        #userInput {
+        margin-left: auto;
+        margin-right: auto;
+        padding-left: 10px;
+        height: 30px;
+        margin-top: 30px;
+        border: 1px solid rgb(100, 94, 94);
+        border-radius: 5px;
+        }
+        input {
+        height: 100%;
+        width: 100%;
+        padding-left: 5px;
+        border: none;
+        outline: none;
+        background: none;
+        border-radius: 10px;
+        }
+        .userText {
+        color: white;
+        font-family: monospace;
+        font-size: 17px;
+        text-align: right;
+        line-height: 30px;
+        }
+        .userText span {
+        background-color: #808080;
+        padding: 10px;
+        border-radius: 2px;
+        }
+        .botText {
+        color: white;
+        font-family: monospace;
+        font-size: 17px;
+        text-align: left;
+        line-height: 30px;
+        }
+        .botText span {
+        background-color: #1ba536;
+        padding: 10px;
+        border-radius: 2px;
+        }
+        .boxed {
+        position: fixed;
+        left: 50%;
+        top: 10px;
+        bottom: 10px;
+        transform: translate(-50%, -50%);
+        width: 40%;
+        margin-top: 20%;
+        border: 4px solid #eee;
+        border-radius: 10px;
+        background: #fff;
+        padding: 20px;
+        overflow-y: auto;
+        }
+        .main {
+        width: 70%;
+        left: 20%;
+        height: 20%;
+        font-style: italic;
+        align-content: center;
+        align-items: center;
+        border: 2px solid black;
+        }
+        .main {
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .im {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        }
+        .t {
+        position: relative;
+        border: 0px solid black;
+        float: right;
+        margin-right: 25%;
+        margin-top: 1px;
+        color: #fff;
+        }
+        /* General */
+        </style>
+      </head>
+      <body>
+          <div style="background-color: black;color: white;text-align:center;padding-top: 20px;padding-bottom: 20px;">
+            <img style="float: left;" src="https://bvcoenm.edu.in/wp-content/uploads/2016/11/cropped-cropped-cropped-logo.png" alt="">
+          <h1 style="padding-right: 147px;">College Helpdesk</h1>
+        </div>
+        <div class="container">
+          <div class="row">
+            <div class="boxed" class="col-md-7">
+              <div id="chatbox">
+                <p class="botText">
+                  <span> Hello, how may I help you?</span>
+                </p>
+              </div>
+              <div id="userInput">
+                <input id="textInput" type="text" name="msg" placeholder="   Ask a question   " size="90"/>
+              </div>
+              <script>
+              function getBotResponse() {
+              var rawText = $("#textInput").val();
+              var userHtml = '<p class="userText"><span>' + rawText + "</span></p>";
+              $("#textInput").val("");
+              $("#chatbox").append(userHtml);
+              document
+              .getElementById("userInput")
+              .scrollIntoView({
+              block: "start",
+              behavior: "smooth"
+              });
+              $.get("/get", {
+              msg: rawText
+              }).done(function (data) {
+              var botHtml = '<p class="botText"><span>' + data + "</span></p>";
+              $("#chatbox").append(botHtml);
+              document
+              .getElementById("userInput")
+              .scrollIntoView({
+              block: "start",
+              behavior: "smooth"
+              });
+              });
+              }
+              $("#textInput").keypress(function (e) {
+              if (e.which == 13) {
+              getBotResponse();
+              }
+              });
+              </script>
+            </div>
+          </div>
+        </div>
+        <!--container end-->
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous">
+        </script>
+        <script type=text/javascript src="{{
+        url_for('static', filename='js/main.js') }}">
+        </script>
+        <script type=text/javascript src="{{
+        url_for('static', filename='js/jquery.blast.min.js') }}">
+        </script>        
+        <p style="background-color: black;color: white;text-align:center;bottom: 0;position: fixed;width: 100%;margin-bottom: 0;padding-top: 20px;padding-bottom: 20px;">Developed by Ojas, Deep and Prathmesh</p>
+      </body>
+    </html>
