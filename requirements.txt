@@ -2,6 +2,6 @@ nltk==3.4.5
 Flask==1.1.1
 gunicorn==20.0.0
 json5==0.8.5
-numpy==1.17.3
+numpy==1.22.0
 tensorflow
 spacy==2.3.4
